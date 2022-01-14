@@ -23,7 +23,7 @@
           Add New Task
         </button>
       </form>
-      <div v-if="" class="taskss">
+      <div v-if="$store.state.tasks.length" class="taskss">
         <div class="completed-tasks">
           <div class="uncompleted-header">
             <p>Fresh Tasks</p>
@@ -36,7 +36,7 @@
           </ul>
         </div>
 
-        <div class="completed-tasks">
+        <div v-if="$store.state.completedTasks.length" class="completed-tasks">
           <div class="completed-header">
             <p>Completed Tasks</p>
           </div>

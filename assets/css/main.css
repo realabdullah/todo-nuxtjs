@@ -144,7 +144,7 @@ body {
   text-align: center;
 }
 .completed-header {
-  display: none;
+  /*display: none;*/
 }
 .addtask-header p {
   font-size: 25px;
@@ -174,7 +174,7 @@ body {
   margin-top: 30px;
 }
 .uncompleted-header {
-  display: none;
+  /*display: none;*/
 }
 .uncompleted-header p{
   font-size: 25px;
