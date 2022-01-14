@@ -1,7 +1,10 @@
 <template>
   <li>
     <p>{{ task.content }}</p>
-    <img @click="toggleDone" src="../assets/uncomplete.png" alt="uncomplete">
+    <img
+      @click="toggleDone"
+       src="https://raw.githubusercontent.com/realabdullah/todo-raw-vuefolder/main/assets/complete.png"
+       alt="uncompleted" />
   </li>
 </template>
 

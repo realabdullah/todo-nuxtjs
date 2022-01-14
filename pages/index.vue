@@ -1,6 +1,9 @@
 <template>
   <div class="doit">
     <div class="header">
+      <img
+        src="https://raw.githubusercontent.com/realabdullah/todo-raw-vuefolder/main/assets/todo.png"
+        alt="check" />
       <h2>CHECK-IT</h2>
     </div>
 
@@ -21,7 +24,7 @@
         </button>
       </form>
       <div class="taskss">
-        <div class="completed-tasks">-->
+        <div class="completed-tasks">
           <div class="uncompleted-header">
             <p>Fresh Tasks</p>
           </div>
