@@ -36,17 +36,17 @@
           </ul>
         </div>
 
-<!--        <div class="completed-tasks">-->
-<!--          <div class="completed-header">-->
-<!--            <p>Completed Tasks</p>-->
-<!--          </div>-->
-<!--          <ul id="tasks" class="tasks">-->
-<!--            <li class="completed-animation" v-for="(completedTodo, index) in completedTodos" :key="completedTodo.id">-->
-<!--              <p>{{ completedTodo.content }}</p>-->
-<!--              <img @click="deleteTask(index)" src="../assets/complete.png" alt="uncomplete">-->
-<!--            </li>-->
-<!--          </ul>-->
-<!--        </div>-->
+        <div class="completed-tasks">
+          <div class="completed-header">
+            <p>Completed Tasks</p>
+          </div>
+          <ul id="tasks" class="tasks">
+            <Complete
+              v-for="(DoneTask, i) in $store.state.completedTasks"
+              :key="i"
+              :DoneTask="DoneTask"/>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
