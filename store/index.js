@@ -1,5 +1,6 @@
 export const state = () => ({
-  tasks: []
+  tasks: [],
+  completedTasks: []
 })
 
 export const mutations = {
@@ -11,5 +12,6 @@ export const mutations = {
   },
   TOGGLE_TASK(state, task) {
     task.done = !task.done
+    state.completedTasks = [{ task }, ...state.completedTasks]
   }
 }

@@ -14,7 +14,7 @@ export default {
   methods: {
     toggleDone() {
       this.$store.commit('TOGGLE_TASK', this.task)
-    }
+    },
   }
 }
 </script>
