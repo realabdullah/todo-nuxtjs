@@ -23,7 +23,7 @@
           Add New Task
         </button>
       </form>
-      <div class="taskss">
+      <div v-if="" class="taskss">
         <div class="completed-tasks">
           <div class="uncompleted-header">
             <p>Fresh Tasks</p>
