@@ -21,21 +21,17 @@
         </button>
       </form>
       <div class="taskss">
-<!--        <div class="completed-tasks">-->
-<!--          <div class="uncompleted-header">-->
-<!--            <p>Fresh Tasks</p>-->
-<!--          </div>-->
-<!--          <div class="search search-animation">-->
-<!--            <input type="text" placeholder="Search tasks here...">-->
-<!--            <img src="../assets/search.png" alt="search">-->
-<!--          </div>-->
-<!--          <ul id="tasks" class="tasks">-->
-<!--            <li class="element-animation" v-for="(todo, index) in todos" :key="todo.id">-->
-<!--              <p>{{ todo.content }}</p>-->
-<!--              <img @click="taskCompleted(index)" src="../assets/uncomplete.png" alt="uncomplete">-->
-<!--            </li>-->
-<!--          </ul>-->
-<!--        </div>-->
+        <div class="completed-tasks">-->
+          <div class="uncompleted-header">
+            <p>Fresh Tasks</p>
+          </div>
+          <ul id="tasks" class="tasks">
+            <Task
+              v-for="(task, i) in $store.state.tasks"
+              :key="i"
+              :task="task"/>
+          </ul>
+        </div>
 
 <!--        <div class="completed-tasks">-->
 <!--          <div class="completed-header">-->
