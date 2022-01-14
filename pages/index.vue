@@ -5,16 +5,19 @@
     </div>
 
     <div class="todo-body">
-      <form @submit.prevent="addNewTodo">
+      <form @submit.prevent="addTask">
         <div class="addtask-header">
           <p>Add A New Task!</p>
         </div>
 
-        <input v-model="newTask" name="newTodo" class="task-input" type="text" placeholder="Task Title..">
+        <input
+          v-model="newTask"
+          class="task-input"
+          type="text"
+          placeholder="Add Task" />
 
-        <button @click.prevent="addNewTodo" class="add">
-          <img src="../assets/add.png" alt="Add">
-          <p>Add New Task</p>
+        <button class="add">
+          Add New Task
         </button>
       </form>
       <div class="taskss">
